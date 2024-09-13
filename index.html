@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <div class="forecast_container roboto-regular">
+    <div class="forecast_container roboto-regular" id="forecastContainer">
 
         <header class="forecast_header roboto-bold f_24">OpenWeather Forecast</header>
-        
+
         <div class="forecast_directory">
 
             <div class="forecast_list">
@@ -26,47 +26,7 @@
                 </div>
                 <div><img src="" alt="weather"></div>
             </div>
-            <!-- <div class="forecast_list">
-                <div class="f_24">Kyiv</div>
-                <div>
-                    <span>4`</span> <br>
-                    <span>overcast clouds</span>
-                </div>
-                <div><img src="" alt="weather"></div>
-            </div>
-            <div class="forecast_list">
-                <div class="f_24">Kyiv</div>
-                <div>
-                    <span>4`</span> <br>
-                    <span>overcast clouds</span>
-                </div>
-                <div><img src="" alt="weather"></div>
-            </div>
-            <div class="forecast_list">
-                <div class="f_24">Kyiv</div>
-                <div>
-                    <span>4`</span> <br>
-                    <span>overcast clouds</span>
-                </div>
-                <div><img src="" alt="weather"></div>
-            </div>
-            <div class="forecast_list">
-                <div class="f_24">Kyiv</div>
-                <div>
-                    <span>4`</span> <br>
-                    <span>overcast clouds</span>
-                </div>
-                <div><img src="" alt="weather"></div>
-            </div>
-            <div class="forecast_list">
-                <div class="f_24">Kyiv</div>
-                <div>
-                    <span>4`</span> <br>
-                    <span>overcast clouds</span>
-                </div>
-                <div><img src="" alt="weather"></div>
-            </div> -->
-
+            
         </div>
 
         <!-- <div class="forecast_list">
@@ -79,10 +39,23 @@
         </div> -->
 
 
-        
-            
+
+
         <footer class="forecast_footer roboto-bold f_24"></footer>
-        </div>
+    </div>
+
+
+    <script type="module">
+
+        import { Draggable } from './scripts/dragNdrop.js';
+
+
+        const forecastContainer = document.getElementById('forecastContainer');
+        
+
+        new Draggable(forecastContainer);
+        
+    </script>
 </body>
 
 </html>
