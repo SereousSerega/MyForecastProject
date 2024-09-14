@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="styles/general.css">
 </head>
 <body>
-    
+
+    <script type="module">
+        import {forecast} from './scripts/forecast.js'
+        import { Draggable } from './scripts/dragNdrop.js';
+        import {forecastService} from './scripts/forecastService.js'
+
+        const forecastContainer = document.getElementById('forecastContainer');
+        
+        new Draggable(document.getElementById('forecastContainer'));
+
+    </script>
 </body>
 </html>
