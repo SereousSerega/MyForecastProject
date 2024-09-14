@@ -13,13 +13,25 @@
 
 <body>
 
+    <p>Description: <br>
+        You can drag the container<br>
+        Click on a city to see the forecast for 5 days<br>click on the forecast to go back<br>
+        to change the indicators, press the white button<br>
+    </p>
+
+    <p>Описание: <br>
+        Вы можете перетащить контейнер<br>
+        Нажмите на город, чтобы увидеть прогноз на 5 дней<br>нажми на прогноз что бы вернутся<br>
+        чтобы изменить показатели, нажмите белую кнопку<br>
+    </p>
+
     <script type="module">
-        import {forecast} from './scripts/forecast.js'
+        import { forecast } from './scripts/forecast.js'
         import { Draggable } from './scripts/dragNdrop.js';
-        import {forecastService} from './scripts/forecastService.js'
+        import { forecastService } from './scripts/forecastService.js'
 
         const forecastContainer = document.getElementById('forecastContainer');
-        
+
         new Draggable(document.getElementById('forecastContainer'));
 
     </script>
