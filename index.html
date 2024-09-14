@@ -12,51 +12,16 @@
 </head>
 
 <body>
-    <!-- <div class="forecast_container roboto-regular" id="forecastContainer">
-
-        <header class="forecast_header roboto-bold f_24">OpenWeather Forecast</header>
-
-        <div class="forecast_directory">
-
-            <div class="forecast_list">
-                <div class="f_24">Kyiv</div>
-                <div>
-                    <span>4`</span> <br>
-                    <span>overcast clouds</span>
-                </div>
-                <div><img src="" alt="weather"></div>
-            </div>
-            
-        </div> -->
-
-        <!-- <div class="forecast_list">
-            <div class="f_24">Kyiv</div>
-            <div>
-                <span>4`</span> <br>
-                <span>overcast clouds</span>
-            </div>
-            <div><img src="" alt="weather"></div>
-        </div> -->
-
-
-
-
-        <!-- <footer class="forecast_footer roboto-bold f_24"></footer>
-    </div> -->
-
 
     <script type="module">
         import {forecast} from './scripts/forecast.js'
         import { Draggable } from './scripts/dragNdrop.js';
         import {forecastService} from './scripts/forecastService.js'
 
-        // const forecastContainer = document.getElementById('forecastContainer');
+        const forecastContainer = document.getElementById('forecastContainer');
         
         new Draggable(document.getElementById('forecastContainer'));
 
-        // forecast.createItem('Kyiv', '4', 'overcast clouds', 'path/to/weather-icon.png');
-        // forecast.createItem('Kyiv', '4', 'overcast clouds', 'path/to/weather-icon.png');
-        // forecast.createItem('Kyiv', '4', 'overcast clouds', 'path/to/weather-icon.png');
     </script>
 </body>
 
