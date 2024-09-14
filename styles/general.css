@@ -73,6 +73,7 @@
 }
 
 .forecast_directory {
+    min-height: 20px;
     max-height: 200px;
 
     display: flex;
